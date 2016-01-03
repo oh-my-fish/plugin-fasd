@@ -1,20 +1,30 @@
-<img src="https://simnalamburt.github.io/pkg-cgitc/logo.svg"
-  align="left" width="160px" height="160px"/>
+<img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
-pkg-fasd
-========
-[fasd] plugin for [fish]<br>
-[![MIT License]](/LICENSE)
+#### fasd
+> [fasd] plugin for [Oh My Fish][omf-link].
+
+[![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
+[![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com)
+[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+
+<br/>
+
+## Install
 
 ```fish
-omf install https://github.com/simnalamburt/pkg-fasd
+$ omf install fasd
 ```
 
-[MIT] © [simnalamburt] et [al]
+
+# License
+
+[MIT][mit] © [simnalamburt][author] et [al][contributors]
+
 
 [fasd]:           https://github.com/clvv/fasd
-[fish]:           https://github.com/oh-my-fish/oh-my-fish#readme
-[MIT License]:    https://img.shields.io/badge/license-MIT-007EC7.svg
-[MIT]:            https://opensource.org/licenses/MIT
-[simnalamburt]:   https://github.com/simnalamburt
-[al]:             https://github.com/simnalamburt/pkg-fasd/graphs/contributors
+[mit]:            http://opensource.org/licenses/MIT
+[author]:         http://github.com/simnalamburt
+[contributors]:   https://github.com/oh-my-fish/plugin-fasd/graphs/contributors
+[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+
+[license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
