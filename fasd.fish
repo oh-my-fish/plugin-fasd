@@ -5,10 +5,8 @@ function init --on-event init_fasd
     return
   end
 
-  #
-  # Fish hooks
-  #
-  function -e fish_preexec _run_fasd
+  # Hook into fish preexec event
+  function __fasd_run -e fish_preexec
     command fasd --proc (command fasd --sanitize "$argv") > "/dev/null" 2>&1
   end
 
