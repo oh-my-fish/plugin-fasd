@@ -32,4 +32,7 @@ function init --on-event init_fasd
   alias f='fasd -f'
   alias z='fasd_cd -d'
   alias zz='fasd_cd -di'
+
+  # Useful aliases
+  alias v='f -t -e vim -b viminfo'
 end
