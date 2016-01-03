@@ -1,32 +1,20 @@
-[![](https://img.shields.io/badge/Wahoo-Package-00b0ff.svg?style=flat-square)][Wahoo]
-![](https://img.shields.io/badge/License-MIT-707070.svg?style=flat-square)
+<img src="https://simnalamburt.github.io/pkg-cgitc/logo.svg"
+  align="left" width="160px" height="160px"/>
 
-# :cherries: [_fasd_](https://github.com/clvv/fasd)
-> Fasd (pronounced similar to "fast") is a command-line productivity booster. Fasd offers quick access to files and directories for POSIX shells. It is inspired by tools like autojump, z and v.
-
-Fasd Package for [Wahoo][Wahoo] / [fish](fishshell.com).
-
-## Install
-> _Note_: You need to have `fasd` installed prior to loading Wahoo.
-
-On OSX `homebrew` has a keg for `fasd`:
+pkg-fasd
+========
+[fasd] plugin for [fish]<br>
+[![MIT License]](/LICENSE)
 
 ```fish
-brew install fasd
+omf install https://github.com/simnalamburt/pkg-fasd
 ```
 
-Finally, add the package to Wahoo:
+[MIT] © [simnalamburt] et [al]
 
-```fish
-wa g fasd
-```
-
-> For compatibility with `autojump` and for the sake of simplicity the actual function is bound to `j`.
-> Please keep in mind that `fasd` will only autojump into directories you have `cd`'ed to before.
-
-# License
-
-[MIT](http://opensource.org/licenses/MIT) © [Tom Hensel][Author]
-
-[Author]: https://github.com/gretel
-[Wahoo]: https://github.com/bucaran/wahoo
+[fasd]:           https://github.com/clvv/fasd
+[fish]:           https://github.com/oh-my-fish/oh-my-fish#readme
+[MIT License]:    https://img.shields.io/badge/license-MIT-007EC7.svg
+[MIT]:            https://opensource.org/licenses/MIT
+[simnalamburt]:   https://github.com/simnalamburt
+[al]:             https://github.com/simnalamburt/pkg-fasd/graphs/contributors
