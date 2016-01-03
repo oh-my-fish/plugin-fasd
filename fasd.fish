@@ -12,13 +12,15 @@ function init --on-event init_fasd
 
   function fasd_cd -d 'Function to execute built-in cd'
     # if no $argv, identical with `fasd`
-    set -l N (count $argv ^ /dev/null)
-    if [ "$N" -le 1 ]
+    if test (count $argv) -le 1
       command fasd "$argv"
     else
-      [ -z "$ret" ]; and return
-      [ -d "$ret" ]; and cd "$ret"; or printf "%s\n" $ret
       set -l ret (command fasd -e 'printf %s' $argv)
+      test -z "$ret";
+        and return
+      test -d "$ret";
+        and cd "$ret";
+        or printf "%s\n" $ret
     end
   end
 
