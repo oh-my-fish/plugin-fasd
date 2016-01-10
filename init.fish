@@ -10,14 +10,14 @@ function init --on-event init_fasd
     command fasd --proc (command fasd --sanitize "$argv") > "/dev/null" 2>&1
   end
 
-  alias a='command fasd -a'
-  alias s='command fasd -si'
-  alias sd='command fasd -sid'
-  alias sf='command fasd -sif'
-  alias d='command fasd -d'
-  alias f='command fasd -f'
-  alias z='fasd_cd -d'
-  alias zz='fasd_cd -di'
+  function a; command fasd -a $argv; end
+  function s; command fasd -si $argv; end
+  function d; command fasd -d $argv; end
+  function f; command fasd -f $argv; end
+  function sd; command fasd -sid $argv; end
+  function sf; command fasd -sif $argv; end
+  function z; fasd_cd -d $argv; end
+  function zz; fasd_cd -di $argv; end
 
   # Useful aliases
   alias v='f -t -e vim -b viminfo'
