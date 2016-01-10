@@ -18,7 +18,4 @@ function init --on-event init_fasd
   function sf; command fasd -sif $argv; end
   function z; fasd_cd -d $argv; end
   function zz; fasd_cd -di $argv; end
-
-  # Useful aliases
-  alias v='f -t -e vim -b viminfo'
 end
