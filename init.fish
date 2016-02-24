@@ -1,6 +1,6 @@
 function init --on-event init_fasd
   # Detect fasd
-  if not available fasd
+  if not type -q fasd
     echo "🍒  Please install 'fasd' first!"
     return
   end
