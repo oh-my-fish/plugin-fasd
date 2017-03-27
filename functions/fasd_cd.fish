@@ -3,7 +3,7 @@ function fasd_cd -d 'Function to execute built-in cd'
   if test (count $argv) -le 1
     command fasd "$argv"
   else
-    set -l ret (command fasd -e 'printf %s' $argv)
+    command fasd -e 'printf %s' $argv | read -l ret
     test -z "$ret";
       and return
     test -d "$ret";
