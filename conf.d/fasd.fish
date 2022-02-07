@@ -8,6 +8,6 @@ if type -q fasd
       command fasd --proc (command fasd --sanitize "$argv" | tr -s ' ' \n) > "/dev/null" 2>&1 &
     end
   end
-else
+else if status is-interactive
   echo "🍒  Please install 'fasd' first!"
 end
